@@ -8,7 +8,7 @@ install:
 	uv sync
 
 collectstatic:
-	python3 manage.py collectstatic
+	python3 manage.py collectstatic --noinput
 
 migrate:
 	python3 manage.py makemigrations
