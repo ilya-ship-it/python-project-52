@@ -23,6 +23,7 @@ devserver:
 	uv run python3 manage.py runserver
 
 test-coverage:
+	uv run coverage run ./manage.py test
 	uv run coverage xml
 
 test:

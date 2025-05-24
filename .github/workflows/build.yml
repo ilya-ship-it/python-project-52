@@ -11,6 +11,8 @@ jobs:
   sonarqube:
     name: SonarQube
     runs-on: ubuntu-latest
+    env:
+      SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
     steps:
       - uses: actions/checkout@v4
@@ -27,7 +29,7 @@ jobs:
           pip install uv
           make install
 
-      - name: Run tests with coverage
+      - name: Run coverage
         run: |
           make test-coverage
 
