@@ -5,5 +5,7 @@
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ilya-ship-it_python-project-52&metric=coverage)](https://sonarcloud.io/dashboard?id=ilya-ship-it_python-project-52)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/quality_gate?project=ilya-ship-it_python-project-52)](https://sonarcloud.io/dashboard?id=ilya-ship-it_python-project-52)
 
+demo - https://python-project-52-7bao.onrender.com/
+
 Task Manager – система управления задачами, подобная http://www.redmine.org/. Она позволяет ставить задачи, назначать исполнителей и менять их статусы. Для работы с системой требуется регистрация и аутентификация:
 
