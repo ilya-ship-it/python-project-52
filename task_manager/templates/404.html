@@ -1,0 +1,7 @@
+{% extends 'layouts/base.html' %}
+{% load i18n %}
+
+{% block content %}
+<h1>{% translate 'Page not found' %}</h1>
+<h3><a href="{% url 'index' %}">{% translate 'Home' %}</a></h3>
+{% endblock %}

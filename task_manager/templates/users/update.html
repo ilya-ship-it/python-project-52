@@ -1,0 +1,8 @@
+{% extends 'layouts/form.html' %}
+{% load i18n %}
+
+
+{% block path %}{% url 'users_update' user.id %}{% endblock %}
+{% block action %}{% translate 'Edit user' %}{% endblock %}
+{% block btn_value %}{% translate 'Edit' %}{% endblock %}
+

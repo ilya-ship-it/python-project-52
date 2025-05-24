@@ -1,0 +1,6 @@
+{% extends 'layouts/form.html' %}
+{% load i18n %}
+
+{% block path %}{% url 'tasks_update' task.id %}{% endblock %}
+{% block action %}{% translate 'Edit task' %}{% endblock %}
+{% block btn_value %}{% translate 'Edit' %}{% endblock %}

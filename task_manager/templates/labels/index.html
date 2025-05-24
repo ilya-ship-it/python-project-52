@@ -1,0 +1,30 @@
+{% extends 'layouts/base.html' %}
+{% load i18n %}
+
+
+{% block content %}
+<h1 class="my-4">{% translate 'Labels' %}</h1>
+<a class="btn btn-primary mb-3" href="{% url 'labels_create' %}">{% translate 'Create label' %}</a>
+<table class="table table-striped">
+    <thead>
+        <th>ID</th>
+        <th>{% translate 'Name' %}</th>
+        <th>{% translate 'Created at' %}</th>
+        <th></th>
+    </thead>
+    <tbody>
+        {% for label in object_list %}
+        <tr>
+            <td>{{ label.id }}</td>
+            <td>{{ label.name }}</td>
+            <td>{{ label.created_at }}</td>
+            <td>
+                <a href="{% url 'labels_update' label.id %}">{% translate 'Update' %}</a>
+                <br>
+                <a href="{% url 'labels_delete' label.id %}">{% translate 'Delete' %}</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends 'layouts/confim_delete.html' %}
+{% load i18n %}
+
+{% block action %}{% translate 'Delete status' %}{% endblock %}
+{% block delete_object %}{{ status.name }}{% endblock %}
+{% block url %}{% url 'statuses_delete' status.id %}{% endblock %}

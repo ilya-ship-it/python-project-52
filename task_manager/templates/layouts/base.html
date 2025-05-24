@@ -1,0 +1,28 @@
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load django_bootstrap5 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+
+        <title>{% translate 'Task Manager' %}</title>
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        {% include 'layouts/navbar.html' %}
+        <div class="container wrapper flex-grow-1">
+        {% include 'layouts/flash.html' %}
+        {% block content %}{% endblock %}
+        </div>
+        <footer>
+
+      <div class="container my-5 pt-4 border-top text-center">
+      </div>
+    
+        </footer>
+    </body>
+</html>

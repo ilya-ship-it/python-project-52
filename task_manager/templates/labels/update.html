@@ -1,0 +1,7 @@
+{% extends 'layouts/form.html' %}
+{% load i18n %}
+
+
+{% block path %}{% url 'labels_update' label.id %}{% endblock %}
+{% block action %}{% translate 'Edit label' %}{% endblock %}
+{% block btn_value %}{% translate 'Edit' %}{% endblock %}

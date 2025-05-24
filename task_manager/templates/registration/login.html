@@ -1,0 +1,7 @@
+{% extends 'layouts/form.html' %}
+{% load i18n %}
+
+
+{% block path %}{% url 'login' %}{% endblock %}
+{% block action %}{% translate 'Log in' %}{% endblock %}
+{% block btn_value %}{% translate 'log in' %}{% endblock %}

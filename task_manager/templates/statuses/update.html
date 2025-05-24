@@ -1,0 +1,7 @@
+{% extends 'layouts/form.html' %}
+{% load i18n %}
+
+
+{% block path %}{% url 'statuses_update' status.id %}{% endblock %}
+{% block action %}{% translate 'Edit status' %}{% endblock %}
+{% block btn_value %}{% translate 'Edit' %}{% endblock %}

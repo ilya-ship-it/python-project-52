@@ -1,0 +1,11 @@
+{% extends 'layouts/base.html' %}
+{% load i18n %}
+
+{% block content %}
+<h1 class="my-4">{% block action %}{% endblock %}</h1>
+<p>{% translate 'Are you sure you want to delete' %} {% block delete_object %}{% endblock %}?</p>
+<form action="{% block url %}{% endblock %}" method="post">
+    {% csrf_token %}
+    <input class="btn btn-danger" type="submit" value="{% translate 'Yes, delete' %}">
+</form>
+{% endblock %}

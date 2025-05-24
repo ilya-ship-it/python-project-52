@@ -1,1 +1,7 @@
-.venv
+.venv/
+*.sqlite3
+__pycache__/
+.env
+.coverage
+coverage.lcov
+static

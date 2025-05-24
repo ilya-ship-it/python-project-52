@@ -1,0 +1,6 @@
+{% extends 'layouts/confim_delete.html' %}
+{% load i18n %}
+
+{% block action %}{% translate 'Delete task' %}{% endblock %}
+{% block delete_object %}{{ task.name }}{% endblock %}
+{% block url %}{% url 'tasks_delete' task.id %}{% endblock %}
